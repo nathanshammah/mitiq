@@ -150,7 +150,10 @@
       "contributions": [
         "example",
         "test",
-        "bug"
+        "bug",
+        "ideas",
+        "code",
+        "doc"
       ]
     },
     {
@@ -331,6 +334,28 @@
         "code"
       ]
     },
+    {
+      "login": "natestemen",
+      "name": "nate stemen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12703123?v=4",
+      "profile": "http://natestemen.xyz",
+      "contributions": [
+        "infra",
+        "doc",
+        "test",
+        "code"
+      ]
+    },
+    {
+      "login": "1ucian0",
+      "name": "Luciano Bello",
+      "avatar_url": "https://avatars.githubusercontent.com/u/766693?v=4",
+      "profile": "https://github.com/1ucian0",
+      "contributions": [
+        "infra",
+        "code"
+      ]
+    }
   ],
   "contributorsPerLine": 7,
   "projectName": "mitiq",
