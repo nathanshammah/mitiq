@@ -29,6 +29,9 @@ To do this, we will
 After demonstrating the use of the two packages, we can then try and understand how circuit compilation with BQSKit in general interacts with error mitigation by running the process many times and comparing results.
 
 ---
+```{code-cell} ipython3
+!pip freeze
+```
 
 To begin we import many of the required modules and functions.
 
