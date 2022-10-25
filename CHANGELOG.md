@@ -1,5 +1,79 @@
 # Changelog
 
+## Version 0.20.0 (In Development)
+
+## Version 0.19.0
+
+### Summary
+
+With this release Mitiq supports most recent versions of Python: `3.8`, `3.9` and `3.10`!
+We drop support for Python `3.7`.
+
+Mitiq is now compatible with Numpy `1.21.6`. Different versions of NumPy may not work properly.
+
+Another important update is the addition of new tools for applying learning-based PEC!
+This release introduces a function for learning depolarizing noise representations from Clifford circuit data. 
+Read more in our updated [API-doc](https://mitiq.readthedocs.io/en/latest/apidoc.html#module-mitiq.pec.representations.biased_noise).
+
+Special thanks to the external contributors @yitchen-tim, @amirebrahimi and @isaac-gs!
+
+
+### All Changes
+- Implement conversions of IonQ native gates for Braket (#1525) [@yitchen-tim]
+- [temporary] ignore errors from first-interaction (#1532) [@natestemen]
+- Update sphinx-autodoc-typehints requirement from ~=1.12.0 to ~=1.19.4 (#1515) [@dependabot[bot]]
+- Update pytest-cov requirement from ~=3.0.0 to ~=4.0.0 (#1521) [@dependabot[bot]]
+- Update myst-nb requirement from ~=0.16.0 to ~=0.17.1 (#1529) [@dependabot[bot]]
+- replace deprecated `execution_excludepatterns` (#1530) [@natestemen]
+- Support python 3.10 (#1504) [@natestemen]
+- Fix outdated link in README (2021 -> 2022) (#1528) [@andreamari]
+- Add learning-based PEC subsection in API doc (#1524) [@nathanshammah]
+- remove `print` calls (#1519) [@natestemen]
+- BQSKit tutorial (#1489) [@natestemen]
+- Update pyquil requirement from ~=3.3.0 to ~=3.3.1 (#1516) [@dependabot[bot]]
+- Update scipy requirement from ~=1.7.3 to ~=1.9.1 (#1467) [@dependabot[bot]]
+- Update mypy requirement from ~=0.971 to ~=0.981 (#1511) [@dependabot[bot]]
+- (partially) upgrade numpy (#1501) [@natestemen]
+- Update amazon-braket-sdk requirement from ~=1.30.2 to ~=1.31.0 (#1512) [@dependabot[bot]]
+- Add whitepaper publication info/links (#1456) [@natestemen]
+- Support python 3.9 (#1505) [@natestemen]
+- Learning function for biased noise (#1358) [@Misty-W]
+- Update amazon-braket-sdk requirement from ~=1.30.1 to ~=1.30.2 (#1506) [@dependabot[bot]]
+- Bump actions/stale from 5 to 6 (#1502) [@dependabot[bot]]
+- Update amazon-braket-sdk requirement from ~=1.30.0 to ~=1.30.1 (#1499) [@dependabot[bot]]
+- Restore the titles of the examples in the Mitiq docs (#1497) [@andreamari]
+- Update amazon-braket-sdk requirement from ~=1.29.4 to ~=1.30.0 (#1492) [@dependabot[bot]]
+- Bump codecov/codecov-action from 3.1.0 to 3.1.1 (#1496) [@dependabot[bot]]
+- removed unused lindblad doc (#1494) [@natestemen]
+- Update pennylane requirement from ~=0.25.1 to ~=0.26.0 (#1495) [@dependabot[bot]]
+- [MCMC 1/3] Moving clifford utils for cdr to own files (#1480) [@isaac-gs]
+- Update qiskit requirement from ~=0.37.2 to ~=0.38.0 (#1490) [@dependabot[bot]]
+- docs: add amirebrahimi as a contributor for code, test, doc (#1487) [@allcontributors[bot]]
+- Move MeasurementResult into _typing to fix circular dependency in #1449 (#1484) [@amirebrahimi]
+- Update amazon-braket-sdk requirement from ~=1.29.3 to ~=1.29.4 (#1483) [@dependabot[bot]]
+
+## Version 0.18.0
+
+### Summary
+
+This release cycle focused on review and approval of two RFCs, one for Readout Error Mitigation (REM) [#1387](https://github.com/unitaryfund/mitiq/issues/1387) and one for Identity insertion noise scaling [#335](https://github.com/unitaryfund/mitiq/issues/335) (not listed as PRs). It also includes bug fixes and minor dependency upgrades. 
+
+### All Changes
+
+- Update amazon-braket-sdk requirement from ~=1.29.2 to ~=1.29.3 (#1481) [@dependabot] 
+- Update black requirement from ~=22.6 to ~=22.8 (#1477) [@dependabot] 
+- docs: add Aaron-Robertson as a contributor for ideas, code, doc (#1464) [@allcontributors]
+- docs: add 1ucian0 as a contributor for infra, code (#1461) [@allcontributors]
+- Update amazon-braket-sdk requirement from ~=1.29.0 to ~=1.29.2 (#1459) [@dependabot] 
+- Update qiskit requirement from ~=0.37.1 to ~=0.37.2 (#1458) [@dependabot] 
+- Update sphinxcontrib-bibtex requirement from ~=2.4.2 to ~=2.5.0 (#1457) [@dependabot]
+- Mid circuit measurement fixed for ddd (#1446) [@Aaron-Robertson]
+- Update pennylane requirement from ~=0.24.0 to ~=0.25.1  (#1444) [@dependabot]
+- Update amazon-braket-sdk requirement from ~=1.28.1 to ~=1.29.0  (#1437) [@dependabot]
+- Update pyquil requirement from ~=3.2.1 to ~=3.3.0 (#1436) [@dependabot]
+- remove patch release docs (#1435) [@natestemen]
+- 0.18.0 in dev (#1433) [@natestemen]
+
 ## Version 0.17.1
 
 ### Summary

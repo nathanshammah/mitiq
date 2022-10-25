@@ -22,8 +22,8 @@ import numpy as np
 import cirq
 import pyquil
 
+from mitiq._typing import MeasurementResult
 from mitiq.executor.executor import Executor
-from mitiq.rem import MeasurementResult
 from mitiq.observable import Observable, PauliString
 from mitiq.interface.mitiq_cirq import (
     compute_density_matrix,
@@ -97,6 +97,18 @@ def test_executor_is_batched_executor():
     assert not Executor.is_batched_executor(executor_serial)
     assert not Executor.is_batched_executor(executor_measurements)
     assert Executor.is_batched_executor(executor_measurements_batched)
+
+
+def test_executor_non_hermitian_observable():
+    obs = Observable(PauliString("Z", coeff=1j))
+
+    q = cirq.LineQubit(0)
+    circuits = [cirq.Circuit(cirq.I.on(q)), cirq.Circuit(cirq.X.on(q))]
+
+    executor = Executor(executor_measurements)
+
+    with pytest.warns(UserWarning, match="hermitian"):
+        executor.evaluate(circuits, obs)
 
 
 @pytest.mark.parametrize("ncircuits", (5, 10, 25))
